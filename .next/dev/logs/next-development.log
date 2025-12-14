@@ -1,0 +1,5 @@
+[00:00:05.312] Server  LOG      ✓ Ready in 4.1s
+[00:00:11.363] Server  LOG      ○ Compiling / ...
+[00:00:46.808] Server  ERROR   Error: UNKNOWN: unknown error, write
+[00:00:46.813] Server  ERROR    ⨯ "uncaughtException:" Error: UNKNOWN: unknown error, write
+[00:00:46.824] Server  ERROR    ⨯ "uncaughtException: " Error: UNKNOWN: unknown error, write
