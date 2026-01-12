@@ -1,6 +1,10 @@
-
-
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaGithub,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -79,10 +83,11 @@ export default function Footer() {
           <p>
             Email:{" "}
             <a
-              href="mailto:yourmail@example.com"
+              href="mailto:rijin.connect@gmail.com
+"
               className="hover:text-gray-900 transition-colors"
             >
-              rijinvreji1@gmail.com
+              rijin.connect@gmail.com
             </a>
           </p>
           <p>

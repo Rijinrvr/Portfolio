@@ -6,6 +6,7 @@ export default function Skills() {
     "React",
     "Next.js",
     "Tailwind CSS",
+    "Less",
     "HTML5",
     "JavaScript",
     "CSS3",
@@ -18,6 +19,13 @@ export default function Skills() {
     "MongoDB",
     "RESTful APIs",
     "TypeScript",
+    "Responsive Design",
+    "Webpack",
+    "Babel",
+    "Sass",
+    "npm",
+    "Yarn",
+    "Vite",
   ];
 
   return (
