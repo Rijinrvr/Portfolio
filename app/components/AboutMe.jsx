@@ -8,7 +8,7 @@ export default function AboutMe() {
         {/* Profile Image */}
         <div className="w-full md:w-1/3 flex justify-center md:justify-start">
           <Image
-            src="/portfolio/p2.jpeg" // Replace with your image path
+            src="/portfolio/p2.jpeg" 
             alt="profile"
             width={300}
             height={400}
