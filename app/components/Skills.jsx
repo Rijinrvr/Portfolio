@@ -29,22 +29,22 @@ export default function Skills() {
   ];
 
   return (
-    <section className="w-full py-20 text-center px-4">
-      <div className="mb-12">
+    <section className="w-full py-12 sm:py-20 text-center px-4 sm:px-6">
+      <div className="mb-8 sm:mb-12">
         <h3 className="text-sm font-semibold tracking-wider text-yellow-400">
           My Mind
         </h3>
-        <h2 className="text-3xl md:text-4xl font-bold">Skills & Technologies</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Skills & Technologies</h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-4 max-w-5xl mx-auto">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.15, y: -5 }}
             transition={{ type: "spring", stiffness: 200, damping: 12 }}
-            className="px-6 py-3 border border-gray-300 rounded-full 
-                       text-lg bg-white shadow-sm hover:shadow-md 
+            className="px-3 sm:px-6 py-2 sm:py-3 border border-gray-300 rounded-full 
+                       text-sm sm:text-lg bg-white shadow-sm hover:shadow-md 
                        cursor-pointer select-none"
           >
             {skill}

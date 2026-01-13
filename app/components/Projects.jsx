@@ -28,25 +28,25 @@ export default function Projects() {
   return (
     <section
       id="Projects"
-      className="w-full py-20 px-6 md:px-16 bg-gradient-to-b from-white via-yellow-100 to-white"
+      className="w-full py-12 sm:py-20 px-4 sm:px-6 md:px-16 bg-gradient-to-b from-white via-yellow-100 to-white"
     >
       {/* Section Title */}
-      <div className="mb-12">
+      <div className="mb-8 sm:mb-12">
         <h3 className="text-sm font-semibold tracking-wider text-yellow-300">
           MY WORK
         </h3>
-        <h2 className="text-3xl md:text-4xl font-bold">RECENT PROJECT</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">RECENT PROJECT</h2>
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {projects.map((item) => (
           <div
             key={item.id}
-            className="bg-white shadow-xl rounded-2xl p-4 hover:-translate-y-1 hover:shadow-2xl transition text-black cursor-pointer"
+            className="bg-white shadow-xl rounded-2xl p-3 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition text-black cursor-pointer"
           >
             {/* Image */}
-            <div className="w-full h-52 overflow-hidden rounded-xl">
+            <div className="w-full h-40 sm:h-52 overflow-hidden rounded-xl">
               <Image
                 src={item.img}
                 width={500}
@@ -57,15 +57,15 @@ export default function Projects() {
             </div>
 
             {/* Content */}
-            <div className="mt-5 flex justify-between items-center">
+            <div className="mt-4 sm:mt-5 flex justify-between items-center">
               <div>
-                <h3 className="text-lg font-bold">{item.title}</h3>
-                <p className="text-sm text-gray-500">{item.subtitle}</p>
+                <h3 className="text-base sm:text-lg font-bold">{item.title}</h3>
+                <p className="text-xs sm:text-sm text-gray-500">{item.subtitle}</p>
               </div>
 
               {/* Small Blue Button */}
               <button
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 text-white hover:bg-yellow-300"
+                className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-yellow-400 text-white hover:bg-yellow-300 flex-shrink-0"
                 onClick={() => window.open(item.link, "_blank")}
               >
                 ↗
@@ -76,7 +76,7 @@ export default function Projects() {
       </div>
 
       {/* Pagination Dot */}
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-8 sm:mt-10">
         <div className="w-12 h-2 bg-yellow-400 rounded-full"></div>
       </div>
     </section>

@@ -13,9 +13,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 function AboutMe() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "AboutMe",
-        className: "w-full py-20 px-10 bg-white",
+        className: "w-full py-12 sm:py-20 px-4 sm:px-10 bg-white",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10",
+            className: "max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-10",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-full md:w-1/3 flex justify-center md:justify-start",
@@ -24,7 +24,7 @@ function AboutMe() {
                         alt: "profile",
                         width: 300,
                         height: 400,
-                        className: "rounded-lg object-cover"
+                        className: "rounded-lg object-cover w-full max-w-[250px] sm:max-w-[300px]"
                     }, void 0, false, {
                         fileName: "[project]/app/components/AboutMe.jsx",
                         lineNumber: 10,
@@ -39,7 +39,7 @@ function AboutMe() {
                     className: "w-full md:w-2/3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mb-12",
+                            className: "mb-8 sm:mb-12",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "text-sm font-semibold tracking-wider text-yellow-300",
@@ -47,15 +47,15 @@ function AboutMe() {
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/AboutMe.jsx",
                                     lineNumber: 22,
-                                    columnNumber: 9
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl md:text-4xl font-bold",
+                                    className: "text-2xl sm:text-3xl md:text-4xl font-bold",
                                     children: "ABOUT ME"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/AboutMe.jsx",
                                     lineNumber: 25,
-                                    columnNumber: 9
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -64,15 +64,15 @@ function AboutMe() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-gray-700 leading-relaxed",
-                            children: "My name is Rijin, and I am a passionate Software Engineer with a strong background in front-end. I love building clean, user-friendly, and visually engaging web applications that solve real-world problems. With experience in React, Next.js, Tailwind CSS, and Node.js, I enjoy turning complex ideas into functional digital experiences. I’m constantly learning new technologies, exploring UI/UX design trends, and collaborating on projects that push the boundaries of creativity and performance."
+                            className: "text-gray-700 leading-relaxed text-sm sm:text-base",
+                            children: "My name is Rijin, and I am a passionate Software Engineer with a strong background in front-end. I love building clean, user-friendly, and visually engaging web applications that solve real-world problems. With experience in React, Next.js, Tailwind CSS, and Node.js, I enjoy turning complex ideas into functional digital experiences. I'm constantly learning new technologies, exploring UI/UX design trends, and collaborating on projects that push the boundaries of creativity and performance."
                         }, void 0, false, {
                             fileName: "[project]/app/components/AboutMe.jsx",
                             lineNumber: 27,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-gray-700 leading-relaxed mt-4",
+                            className: "text-gray-700 leading-relaxed mt-4 text-sm sm:text-base",
                             children: "I thrive in fast-paced environments where I can contribute innovative solutions and work closely with teams to deliver high-quality products. I also enjoy mentoring junior developers, sharing knowledge, and fostering a culture of continuous improvement. Outside of coding, I am passionate about exploring the latest tech innovations, contributing to open-source projects, and creating portfolio projects that showcase both my technical and creative skills.My goal is to craft impactful digital experiences that make a difference and leave a lasting impression."
                         }, void 0, false, {
                             fileName: "[project]/app/components/AboutMe.jsx",
@@ -142,10 +142,10 @@ function Skills() {
         "Vite"
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "w-full py-20 text-center px-4",
+        className: "w-full py-12 sm:py-20 text-center px-4 sm:px-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-12",
+                className: "mb-8 sm:mb-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "text-sm font-semibold tracking-wider text-yellow-400",
@@ -156,7 +156,7 @@ function Skills() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-3xl md:text-4xl font-bold",
+                        className: "text-2xl sm:text-3xl md:text-4xl font-bold",
                         children: "Skills & Technologies"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Skills.jsx",
@@ -170,7 +170,7 @@ function Skills() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-wrap justify-center gap-4 max-w-5xl mx-auto",
+                className: "flex flex-wrap justify-center gap-2 sm:gap-4 max-w-5xl mx-auto",
                 children: skills.map((skill, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         whileHover: {
                             scale: 1.15,
@@ -181,7 +181,7 @@ function Skills() {
                             stiffness: 200,
                             damping: 12
                         },
-                        className: "px-6 py-3 border border-gray-300 rounded-full  text-lg bg-white shadow-sm hover:shadow-md  cursor-pointer select-none",
+                        className: "px-3 sm:px-6 py-2 sm:py-3 border border-gray-300 rounded-full  text-sm sm:text-lg bg-white shadow-sm hover:shadow-md  cursor-pointer select-none",
                         children: skill
                     }, index, false, {
                         fileName: "[project]/app/components/Skills.jsx",
@@ -244,10 +244,10 @@ function Projects() {
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "Projects",
-        className: "w-full py-20 px-6 md:px-16 bg-gradient-to-b from-white via-yellow-100 to-white",
+        className: "w-full py-12 sm:py-20 px-4 sm:px-6 md:px-16 bg-gradient-to-b from-white via-yellow-100 to-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-12",
+                className: "mb-8 sm:mb-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "text-sm font-semibold tracking-wider text-yellow-300",
@@ -258,7 +258,7 @@ function Projects() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-3xl md:text-4xl font-bold",
+                        className: "text-2xl sm:text-3xl md:text-4xl font-bold",
                         children: "RECENT PROJECT"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Projects.jsx",
@@ -272,12 +272,12 @@ function Projects() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-1 md:grid-cols-3 gap-8",
+                className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8",
                 children: projects.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white shadow-xl rounded-2xl p-4 hover:-translate-y-1 hover:shadow-2xl transition text-black cursor-pointer",
+                        className: "bg-white shadow-xl rounded-2xl p-3 sm:p-4 hover:-translate-y-1 hover:shadow-2xl transition text-black cursor-pointer",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full h-52 overflow-hidden rounded-xl",
+                                className: "w-full h-40 sm:h-52 overflow-hidden rounded-xl",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: item.img,
                                     width: 500,
@@ -295,12 +295,12 @@ function Projects() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-5 flex justify-between items-center",
+                                className: "mt-4 sm:mt-5 flex justify-between items-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-lg font-bold",
+                                                className: "text-base sm:text-lg font-bold",
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Projects.jsx",
@@ -308,7 +308,7 @@ function Projects() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-sm text-gray-500",
+                                                className: "text-xs sm:text-sm text-gray-500",
                                                 children: item.subtitle
                                             }, void 0, false, {
                                                 fileName: "[project]/app/components/Projects.jsx",
@@ -322,7 +322,7 @@ function Projects() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 text-white hover:bg-yellow-300",
+                                        className: "w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-yellow-400 text-white hover:bg-yellow-300 flex-shrink-0",
                                         onClick: ()=>window.open(item.link, "_blank"),
                                         children: "↗"
                                     }, void 0, false, {
@@ -348,7 +348,7 @@ function Projects() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex justify-center mt-10",
+                className: "flex justify-center mt-8 sm:mt-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-12 h-2 bg-yellow-400 rounded-full"
                 }, void 0, false, {
@@ -401,10 +401,10 @@ function Experience() {
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "Experience",
-        className: "w-full py-20 px-6 md:px-20 bg-gradient-to-b from-white via-yellow-100 to-white",
+        className: "w-full py-12 sm:py-20 px-4 sm:px-6 md:px-20 bg-gradient-to-b from-white via-yellow-100 to-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mb-12",
+                className: "mb-8 sm:mb-12",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "text-sm font-semibold tracking-wider text-yellow-400",
@@ -415,7 +415,7 @@ function Experience() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-3xl md:text-4xl font-bold",
+                        className: "text-2xl sm:text-3xl md:text-4xl font-bold",
                         children: "WORK HISTORY"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Experience.jsx",
@@ -429,22 +429,22 @@ function Experience() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative border-l-4 border-yellow-400 ml-4",
+                className: "relative border-l-4 border-yellow-400 ml-2 sm:ml-4",
                 children: experience.map((exp, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mb-10 ml-6",
+                        className: "mb-8 sm:mb-10 ml-4 sm:ml-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute -left-[10px] w-5 h-5 bg-yellow-500 rounded-full border-4 border-white shadow-md"
+                                className: "absolute -left-[10px] w-4 h-4 sm:w-5 sm:h-5 bg-yellow-500 rounded-full border-4 border-white shadow-md"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Experience.jsx",
                                 lineNumber: 40,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer",
+                                className: "bg-white p-4 sm:p-6 rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-yellow-600 font-semibold",
+                                        className: "text-yellow-600 font-semibold text-sm sm:text-base",
                                         children: exp.year
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Experience.jsx",
@@ -452,7 +452,7 @@ function Experience() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-xl font-bold mt-2",
+                                        className: "text-lg sm:text-xl font-bold mt-2",
                                         children: exp.role
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Experience.jsx",
@@ -460,7 +460,7 @@ function Experience() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "text-gray-500 text-sm mt-1",
+                                        className: "text-gray-500 text-xs sm:text-sm mt-1",
                                         children: exp.company
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Experience.jsx",
@@ -468,7 +468,7 @@ function Experience() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-700 mt-3 leading-relaxed",
+                                        className: "text-gray-700 mt-3 leading-relaxed text-sm sm:text-base",
                                         children: exp.desc
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Experience.jsx",
@@ -519,16 +519,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$ico
 ;
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-        className: "py-12 px-6 bg-gradient-to-r from-yellow-100 via-white to-yellow-100 text-gray-800",
+        className: "py-8 sm:py-12 px-4 sm:px-6 bg-gradient-to-r from-yellow-100 via-white to-yellow-100 text-gray-800",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8",
+                className: "max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-4",
+                        className: "space-y-3 sm:space-y-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-xl font-bold",
+                                className: "text-lg sm:text-xl font-bold",
                                 children: "About Me"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Footer.jsx",
@@ -536,7 +536,8 @@ function Footer() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "I am a passionate front-end developer creating visually appealing and interactive web experiences. Let’s build something amazing together!"
+                                className: "text-sm sm:text-base",
+                                children: "I am a passionate front-end developer creating visually appealing and interactive web experiences. Let's build something amazing together!"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Footer.jsx",
                                 lineNumber: 16,
@@ -547,7 +548,7 @@ function Footer() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "https://www.instagram.com/_eleven_._?igsh=MTV6dmN1MDNsa2gwbg==",
-                                        className: "hover:text-pink-500 transition-colors",
+                                        className: "hover:text-pink-500 transition-colors text-xl",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaInstagram"], {}, void 0, false, {
                                             fileName: "[project]/app/components/Footer.jsx",
                                             lineNumber: 26,
@@ -560,7 +561,7 @@ function Footer() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "https://www.linkedin.com/in/r-v-r/",
-                                        className: "hover:text-blue-700 transition-colors",
+                                        className: "hover:text-blue-700 transition-colors text-xl",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaLinkedinIn"], {}, void 0, false, {
                                             fileName: "[project]/app/components/Footer.jsx",
                                             lineNumber: 33,
@@ -573,7 +574,7 @@ function Footer() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "https://github.com/Rijinrvr",
-                                        className: "hover:text-blue-700 transition-colors",
+                                        className: "hover:text-blue-700 transition-colors text-xl",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaGithub"], {}, void 0, false, {
                                             fileName: "[project]/app/components/Footer.jsx",
                                             lineNumber: 39,
@@ -597,10 +598,10 @@ function Footer() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-4",
+                        className: "space-y-3 sm:space-y-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-xl font-bold",
+                                className: "text-lg sm:text-xl font-bold",
                                 children: "Quick Links"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Footer.jsx",
@@ -608,7 +609,7 @@ function Footer() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                className: "space-y-2",
+                                className: "space-y-2 text-sm sm:text-base",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -683,10 +684,10 @@ function Footer() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-4",
+                        className: "space-y-3 sm:space-y-4 sm:col-span-2 md:col-span-1",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-xl font-bold",
+                                className: "text-lg sm:text-xl font-bold",
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Footer.jsx",
@@ -694,6 +695,7 @@ function Footer() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm sm:text-base break-words",
                                 children: [
                                     "Email:",
                                     " ",
@@ -713,6 +715,7 @@ function Footer() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm sm:text-base",
                                 children: [
                                     "Phone:",
                                     " ",
@@ -732,6 +735,7 @@ function Footer() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm sm:text-base",
                                 children: "Location: Kerala, India"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Footer.jsx",
@@ -751,7 +755,7 @@ function Footer() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-12 text-center border-t border-yellow-500 pt-6 text-sm text-gray-700",
+                className: "mt-8 sm:mt-12 text-center border-t border-yellow-500 pt-4 sm:pt-6 text-xs sm:text-sm text-gray-700",
                 children: [
                     "© ",
                     new Date().getFullYear(),
@@ -784,12 +788,15 @@ __turbopack_context__.s([
     ()=>Home
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$AboutMe$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/AboutMe.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Skills.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Projects$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Projects.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Experience$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Experience.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Footer.jsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -799,14 +806,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$
 ;
 ;
 function Home() {
+    _s();
+    const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         className: "w-full min-h-screen relative text-black font-sans bg-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "w-full flex justify-between items-center px-8 md:px-20 py-6",
+                className: "w-full flex justify-between items-center px-4 sm:px-8 md:px-20 py-6 relative",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-3xl font-bold",
+                        className: "text-2xl sm:text-3xl font-bold",
                         children: [
                             "Rijin V Reji",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -814,13 +823,13 @@ function Home() {
                                 children: "."
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 15,
+                                lineNumber: 19,
                                 columnNumber: 23
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 14,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -832,7 +841,7 @@ function Home() {
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 18,
+                                lineNumber: 24,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -841,7 +850,7 @@ function Home() {
                                 children: "Projects"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 21,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -850,39 +859,138 @@ function Home() {
                                 children: "Experience"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 24,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 17,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "mailto:rijinvreji1@gmail.com",
-                        className: "border border-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-black hover:text-white transition inline-block",
+                        className: "hidden sm:inline-block border border-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-black hover:text-white transition",
                         children: "hello@rijin"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 28,
+                        lineNumber: 36,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setMobileMenuOpen(!mobileMenuOpen),
+                        className: "md:hidden flex flex-col gap-1.5 p-2 z-50",
+                        "aria-label": "Toggle menu",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: `w-6 h-0.5 bg-black transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 49,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: `w-6 h-0.5 bg-black transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 50,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: `w-6 h-0.5 bg-black transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.tsx",
+                                lineNumber: 51,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this),
+                    mobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: -20
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        exit: {
+                            opacity: 0,
+                            y: -20
+                        },
+                        className: "absolute top-full left-0 right-0 bg-white shadow-lg md:hidden z-40 border-t border-gray-200",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col px-4 py-6 gap-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "#AboutMe",
+                                    className: "text-lg hover:text-yellow-500 transition py-2",
+                                    onClick: ()=>setMobileMenuOpen(false),
+                                    children: "About"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 63,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "#Projects",
+                                    className: "text-lg hover:text-yellow-500 transition py-2",
+                                    onClick: ()=>setMobileMenuOpen(false),
+                                    children: "Projects"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 70,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "#Experience",
+                                    className: "text-lg hover:text-yellow-500 transition py-2",
+                                    onClick: ()=>setMobileMenuOpen(false),
+                                    children: "Experience"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 77,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "mailto:rijinvreji1@gmail.com",
+                                    className: "border border-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-black hover:text-white transition text-center",
+                                    children: "hello@rijin"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 84,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 62,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 56,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 13,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "w-full max-w-5xl mx-auto text-center px-8 md:px-0 py-20",
+                className: "w-full max-w-5xl mx-auto text-center px-4 sm:px-8 md:px-0 py-12 sm:py-20",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-xl md:text-2xl mb-6",
+                        className: "text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6",
                         children: "👋, my name is Rijin and I am a Software Engineer"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 38,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -897,107 +1005,108 @@ function Home() {
                         transition: {
                             duration: 0.6
                         },
-                        className: "text-5xl md:text-7xl font-extrabold leading-tight relative inline-block",
+                        className: "text-3xl sm:text-5xl md:text-7xl font-extrabold leading-tight relative inline-block px-2",
                         children: [
                             "Software Engineer",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "inline-block ml-2 text-2xl align-top border border-black rounded-full p-2",
+                                className: "inline-block ml-2 text-xl sm:text-2xl align-top border border-black rounded-full p-1 sm:p-2",
                                 children: "↗"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 49,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 42,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-6xl md:text-8xl font-bold text-yellow-300 -mt-6 mb-10",
+                        className: "text-4xl sm:text-6xl md:text-8xl font-bold text-yellow-300 -mt-4 sm:-mt-6 mb-6 sm:mb-10",
                         children: "& Photographer"
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 54,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg mb-8",
+                        className: "text-base sm:text-lg mb-6 sm:mb-8",
                         children: "based in Kerala, God's Own Country."
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 58,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-center gap-4 mt-6 mb-20",
+                        className: "flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-6 mb-12 sm:mb-20 px-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "/portfolio/Rijin_v_Reji.pdf",
                                 download: true,
-                                className: "px-6 py-3 bg-yellow-400 text-white rounded-lg hover:opacity-80 transition",
+                                className: "px-6 py-3 bg-yellow-400 text-white rounded-lg hover:opacity-80 transition text-center",
                                 children: "Download CV"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 62,
+                                lineNumber: 122,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "https://wa.me/919061788964",
                                 target: "_blank",
                                 rel: "noopener noreferrer",
-                                className: "px-6 py-3 border border-yellow-400 rounded-lg hover:bg-yellow-300 hover:text-white transition",
+                                className: "px-6 py-3 border border-yellow-400 rounded-lg hover:bg-yellow-300 hover:text-white transition text-center",
                                 children: "Let's Talk"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.tsx",
-                                lineNumber: 69,
+                                lineNumber: 129,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 61,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 37,
+                lineNumber: 97,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$AboutMe$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 80,
+                lineNumber: 140,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Projects$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 81,
+                lineNumber: 141,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 82,
+                lineNumber: 142,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Experience$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 83,
+                lineNumber: 143,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 84,
+                lineNumber: 144,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 11,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 }
+_s(Home, "d7gXMF6mPDUhHBNUSEb8mLK4AII=");
 _c = Home;
 var _c;
 __turbopack_context__.k.register(_c, "Home");
