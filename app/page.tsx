@@ -120,7 +120,7 @@ export default function Home() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-6 mb-12 sm:mb-20 px-4">
           <a
-            href="/portfolio/Rijin_v_Reji.pdf"
+            href="/portfolio/Rijin_V_Reji.pdf"
             download
             className="px-6 py-3 bg-yellow-400 text-white rounded-lg hover:opacity-80 transition text-center"
           >
