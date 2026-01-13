@@ -34,10 +34,10 @@ export default function Home() {
 
         {/* Contact Button - Hidden on mobile */}
         <a
-          href="mailto:rijinvreji1@gmail.com"
+          href="mailto:rijin.connect@gmail.com"
           className="hidden sm:inline-block border border-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-black hover:text-white transition"
         >
-          hello@rijin
+          rijin@connect
         </a>
 
         {/* Hamburger Menu Button */}
@@ -46,9 +46,21 @@ export default function Home() {
           className="md:hidden flex flex-col gap-1.5 p-2 z-50"
           aria-label="Toggle menu"
         >
-          <span className={`w-6 h-0.5 bg-black transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-          <span className={`w-6 h-0.5 bg-black transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
-          <span className={`w-6 h-0.5 bg-black transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+          <span
+            className={`w-6 h-0.5 bg-black transition-all ${
+              mobileMenuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`w-6 h-0.5 bg-black transition-all ${
+              mobileMenuOpen ? "opacity-0" : ""
+            }`}
+          ></span>
+          <span
+            className={`w-6 h-0.5 bg-black transition-all ${
+              mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
         </button>
 
         {/* Mobile Menu */}
@@ -82,11 +94,10 @@ export default function Home() {
                 Experience
               </a>
               <a
-                href="mailto:rijinvreji1@gmail.com"
+                href="mailto:rijin.connect@gmail.com"
                 className="border border-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-black hover:text-white transition text-center"
               >
-                hello@rijin
-
+                rijin@connect
               </a>
             </div>
           </motion.div>
@@ -115,7 +126,9 @@ export default function Home() {
           & Photographer
         </h2>
 
-        <p className="text-base sm:text-lg mb-6 sm:mb-8">based in Kerala, God&apos;s Own Country.</p>
+        <p className="text-base sm:text-lg mb-6 sm:mb-8">
+          based in Kerala, God&apos;s Own Country.
+        </p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-6 mb-12 sm:mb-20 px-4">
