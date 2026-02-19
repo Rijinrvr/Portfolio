@@ -3,7 +3,7 @@
 export default function Experience() {
   const experience = [
     {
-      year: "2023 - Present",
+      year: "2023 - 2025",
       role: "Software Engineer",
       company: "Apps Team Technologies",
       desc: "Designing and developing responsive websites, UI components, and web applications for clients.",
@@ -14,12 +14,7 @@ export default function Experience() {
       company: "Apps Team Technologies",
       desc: "Designed mobile apps, dashboards, website layouts, and improved user experience for client projects.",
     },
-    // {
-    //   year: "2020 - 2021",
-    //   role: "Web Designer",
-    //   company: "Startup Company",
-    //   desc: "Created landing pages, wireframes, prototypes, and design systems.",
-    // },
+
   ];
 
   return (

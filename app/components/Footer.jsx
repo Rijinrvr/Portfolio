@@ -20,6 +20,7 @@ export default function Footer() {
           </p>
           <div className="flex space-x-4 mt-2">
             <a
+            target="_blank"
               href="https://www.instagram.com/_eleven_._?igsh=MTV6dmN1MDNsa2gwbg=="
               className="hover:text-pink-500 transition-colors text-xl"
             >
@@ -27,12 +28,14 @@ export default function Footer() {
             </a>
 
             <a
+            target="_blank"
               href="https://www.linkedin.com/in/r-v-r/"
               className="hover:text-blue-700 transition-colors text-xl"
             >
               <FaLinkedinIn />
             </a>
             <a
+            target="_blank"
               href="https://github.com/Rijinrvr"
               className="hover:text-blue-700 transition-colors text-xl"
             >
