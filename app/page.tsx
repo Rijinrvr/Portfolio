@@ -3,9 +3,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 import AboutMe from "./components/AboutMe";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
 import TypeWriter from "./components/TypeWriter";
@@ -13,6 +11,36 @@ import TypeWriter from "./components/TypeWriter";
 const ThreeScene = dynamic(() => import("./components/ThreeScene"), {
   ssr: false,
 });
+
+const SkillsGalaxy = dynamic(() => import("./components/SkillsGalaxy"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full py-32 flex items-center justify-center">
+      <div className="text-[var(--text-muted)] font-mono text-sm animate-pulse">
+        Loading Skills Galaxy...
+      </div>
+    </div>
+  ),
+});
+
+const ExperienceJourney = dynamic(
+  () => import("./components/ExperienceJourney"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full py-32 flex items-center justify-center">
+        <div className="text-[var(--text-muted)] font-mono text-sm animate-pulse">
+          Loading Experience Quest...
+        </div>
+      </div>
+    ),
+  }
+);
+
+const GlobalParticles = dynamic(
+  () => import("./components/GlobalParticles"),
+  { ssr: false }
+);
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,6 +71,9 @@ export default function Home() {
   return (
     <main className="w-full min-h-screen relative font-sans noise-bg">
       <CustomCursor />
+
+      {/* Global reactive particles */}
+      <GlobalParticles />
 
       {/* Gradient mesh background */}
       <div className="gradient-mesh" />
@@ -249,7 +280,7 @@ export default function Home() {
             className="mt-16 sm:mt-24 flex flex-col items-center gap-2"
           >
             <span className="text-xs font-mono text-[var(--text-muted)]">
-              scroll down
+              scroll to explore
             </span>
             <motion.div
               animate={{ y: [0, 8, 0] }}
@@ -264,8 +295,8 @@ export default function Home() {
 
       <AboutMe />
       <Projects />
-      <Skills />
-      <Experience />
+      <SkillsGalaxy />
+      <ExperienceJourney />
       <Footer />
     </main>
   );
