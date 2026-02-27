@@ -13,12 +13,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hi,Its me Rijin V Reji",
-  description: "Welcome to my personal portfolio website!",
+  title: "Rijin V Reji — React.js Developer & Frontend Engineer",
+  description:
+    "Portfolio of Rijin V Reji — a React.js developer and frontend engineer specializing in Next.js, TypeScript, and modern web experiences. Based in Kerala, India.",
+  keywords: [
+    "React Developer",
+    "Next.js Developer",
+    "Frontend Engineer",
+    "Rijin V Reji",
+    "Web Developer Kerala",
+    "TypeScript",
+    "JavaScript",
+  ],
+  openGraph: {
+    title: "Rijin V Reji — React.js Developer",
+    description:
+      "Building high-performance, accessible, and beautiful web applications with React.js, Next.js, and modern web technologies.",
+    type: "website",
+  },
 };
 
 export const viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 5,
 };
@@ -30,6 +46,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
