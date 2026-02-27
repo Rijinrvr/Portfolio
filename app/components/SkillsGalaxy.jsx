@@ -1,9 +1,20 @@
 "use client";
-import { useRef, useMemo, useState, useCallback, Suspense } from "react";
+import { useRef, useMemo, useState, useEffect, Suspense } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float, Text, OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 import { motion, useInView } from "framer-motion";
+
+function useIsMobile() {
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        const check = () => setIsMobile(window.innerWidth < 640);
+        check();
+        window.addEventListener("resize", check);
+        return () => window.removeEventListener("resize", check);
+    }, []);
+    return isMobile;
+}
 
 const allSkills = [
     // Frontend Core
@@ -33,16 +44,16 @@ const allSkills = [
 ];
 
 // Position skills in a sphere-like constellation
-function getSkillPositions(skills) {
+function getSkillPositions(skills, isMobile = false) {
     const positions = [];
     const goldenAngle = Math.PI * (3 - Math.sqrt(5));
     const count = skills.length;
+    const spread = isMobile ? 4 : 6;
 
     for (let i = 0; i < count; i++) {
         const y = 1 - (i / (count - 1)) * 2;
         const radius = Math.sqrt(1 - y * y);
         const theta = goldenAngle * i;
-        const spread = 6;
 
         positions.push({
             x: Math.cos(theta) * radius * spread,
@@ -114,12 +125,13 @@ function SkillNode({ skill, position, index, hoveredSkill, setHoveredSkill }) {
 
             {/* Label */}
             <Text
-                position={[0, -0.6, 0]}
-                fontSize={isHovered ? 0.32 : 0.22}
-                color={isHovered ? "#ffffff" : "#94a3b8"}
+                position={[0, -0.55, 0]}
+                fontSize={isHovered ? 0.3 : 0.2}
+                color={isHovered ? "#ffffff" : "#c4c8d4"}
                 anchorX="center"
                 anchorY="top"
-                outlineWidth={0}
+                outlineWidth={0.02}
+                outlineColor="#000000"
             >
                 {skill.name}
             </Text>
@@ -195,9 +207,22 @@ function StarField({ count = 200 }) {
     );
 }
 
-function SkillsScene({ hoveredSkill, setHoveredSkill }) {
-    const positions = useMemo(() => getSkillPositions(allSkills), []);
+function SkillsScene({ hoveredSkill, setHoveredSkill, isMobile }) {
+    const positions = useMemo(() => getSkillPositions(allSkills, isMobile), [isMobile]);
     const groupRef = useRef();
+    const { camera } = useThree();
+
+    // Adjust camera for mobile
+    useEffect(() => {
+        if (isMobile) {
+            camera.position.set(0, 0, 16);
+            camera.fov = 70;
+        } else {
+            camera.position.set(0, 0, 12);
+            camera.fov = 60;
+        }
+        camera.updateProjectionMatrix();
+    }, [isMobile, camera]);
 
     useFrame((state) => {
         if (groupRef.current) {
@@ -208,7 +233,7 @@ function SkillsScene({ hoveredSkill, setHoveredSkill }) {
 
     return (
         <>
-            <ambientLight intensity={0.3} />
+            <ambientLight intensity={0.4} />
             <pointLight position={[10, 10, 10]} intensity={0.8} color="#6366f1" />
             <pointLight position={[-10, -5, -10]} intensity={0.4} color="#8b5cf6" />
             <pointLight position={[0, 10, 0]} intensity={0.3} color="#a78bfa" />
@@ -232,7 +257,7 @@ function SkillsScene({ hoveredSkill, setHoveredSkill }) {
                 enableZoom={false}
                 enablePan={false}
                 autoRotate
-                autoRotateSpeed={0.3}
+                autoRotateSpeed={0.5}
                 maxPolarAngle={Math.PI * 0.7}
                 minPolarAngle={Math.PI * 0.3}
             />
@@ -244,6 +269,7 @@ export default function SkillsGalaxy() {
     const sectionRef = useRef(null);
     const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
     const [hoveredSkill, setHoveredSkill] = useState(null);
+    const isMobile = useIsMobile();
 
     const activeSkill = hoveredSkill !== null ? allSkills[hoveredSkill] : null;
 
@@ -264,7 +290,7 @@ export default function SkillsGalaxy() {
     return (
         <section
             id="Skills"
-            className="w-full py-16 sm:py-24 lg:py-32 px-5 sm:px-8 md:px-16 relative"
+            className="w-full py-12 sm:py-24 lg:py-32 px-4 sm:px-8 md:px-16 relative"
             ref={sectionRef}
         >
             <div className="max-w-6xl mx-auto">
@@ -276,49 +302,57 @@ export default function SkillsGalaxy() {
                     className="text-center mb-4 sm:mb-8"
                 >
                     <span className="section-label">// Tech Stack</span>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3">
+                    <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mt-3">
                         Skills{" "}
                         <span className="gradient-text">Galaxy</span>
                     </h2>
-                    <p className="text-[var(--text-muted)] mt-4 max-w-lg mx-auto text-sm sm:text-base">
-                        Explore my tech constellation. Drag to rotate, hover to discover.
+                    <p className="text-[var(--text-muted)] mt-3 sm:mt-4 max-w-lg mx-auto text-xs sm:text-base">
+                        {isMobile
+                            ? "Drag to rotate. Tap a node to discover."
+                            : "Explore my tech constellation. Drag to rotate, hover to discover."}
                     </p>
                 </motion.div>
 
                 {/* 3D Canvas */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="relative w-full aspect-[4/3] sm:aspect-[16/9] rounded-2xl overflow-hidden glass-card"
-                    style={{ minHeight: "400px" }}
+                    className="relative w-full rounded-2xl overflow-hidden glass-card"
+                    style={{
+                        aspectRatio: isMobile ? "3 / 4" : "16 / 9",
+                        minHeight: isMobile ? "320px" : "400px",
+                        maxHeight: isMobile ? "480px" : "none",
+                        touchAction: "none",
+                    }}
                 >
                     <Canvas
-                        camera={{ position: [0, 0, 12], fov: 60 }}
-                        dpr={[1, 1.5]}
-                        gl={{ antialias: true, alpha: true }}
+                        camera={{ position: [0, 0, isMobile ? 16 : 12], fov: isMobile ? 70 : 60 }}
+                        dpr={[1, isMobile ? 1 : 1.5]}
+                        gl={{ antialias: !isMobile, alpha: true }}
                         style={{ background: "transparent" }}
                     >
                         <Suspense fallback={null}>
                             <SkillsScene
                                 hoveredSkill={hoveredSkill}
                                 setHoveredSkill={setHoveredSkill}
+                                isMobile={isMobile}
                             />
                         </Suspense>
                     </Canvas>
 
-                    {/* Hover Info Overlay */}
+                    {/* Hover/Tap Info Overlay */}
                     {activeSkill && (
-                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 glass-card px-6 py-3 pointer-events-none">
-                            <div className="flex items-center gap-3">
+                        <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 glass-card px-4 sm:px-6 py-2 sm:py-3 pointer-events-none z-10">
+                            <div className="flex items-center gap-2 sm:gap-3">
                                 <div
-                                    className="w-3 h-3 rounded-full"
+                                    className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full flex-shrink-0"
                                     style={{ backgroundColor: activeSkill.color }}
                                 />
-                                <span className="text-white font-bold text-sm sm:text-base">
+                                <span className="text-white font-bold text-xs sm:text-base whitespace-nowrap">
                                     {activeSkill.name}
                                 </span>
-                                <span className="text-xs text-[var(--text-muted)] font-mono">
+                                <span className="text-[10px] sm:text-xs text-[var(--text-muted)] font-mono whitespace-nowrap">
                                     {categoryLabels[activeSkill.category]}
                                 </span>
                             </div>
@@ -326,8 +360,8 @@ export default function SkillsGalaxy() {
                     )}
 
                     {/* Instruction hint */}
-                    <div className="absolute top-4 right-4 text-xs font-mono text-[var(--text-muted)] opacity-50">
-                        drag to explore ↻
+                    <div className="absolute top-3 sm:top-4 right-3 sm:right-4 text-[10px] sm:text-xs font-mono text-[var(--text-muted)] opacity-50">
+                        {isMobile ? "drag ↻" : "drag to explore ↻"}
                     </div>
                 </motion.div>
 
@@ -336,12 +370,12 @@ export default function SkillsGalaxy() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ delay: 0.6 }}
-                    className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-6 sm:mt-8"
+                    className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-3 sm:gap-6 mt-5 sm:mt-8"
                 >
                     {Object.entries(categoryLabels).map(([key, label]) => (
                         <div key={key} className="flex items-center gap-2">
                             <div
-                                className="w-2.5 h-2.5 rounded-full"
+                                className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full flex-shrink-0"
                                 style={{ backgroundColor: categoryColors[key] }}
                             />
                             <span className="text-xs sm:text-sm text-[var(--text-muted)]">

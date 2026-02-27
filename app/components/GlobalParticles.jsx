@@ -165,7 +165,8 @@ export default function GlobalParticles() {
                 camera={{ position: [0, 0, 10], fov: 75 }}
                 dpr={[1, 1]}
                 gl={{ antialias: false, alpha: true }}
-                style={{ background: "transparent" }}
+                style={{ background: "transparent", pointerEvents: "none" }}
+                eventPrefix="offset"
             >
                 <ReactiveParticles mouse={mouse} />
                 <FloatingOrbs />
