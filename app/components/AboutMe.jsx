@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const stats = [
-  { number: "2+", label: "Years Experience" },
+  { number: "3+", label: "Years Experience" },
   { number: "15+", label: "Projects Completed" },
   { number: "10+", label: "Happy Clients" },
   { number: "5+", label: "Tech Stack" },
