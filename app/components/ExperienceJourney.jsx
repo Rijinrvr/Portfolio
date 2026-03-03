@@ -24,6 +24,15 @@ const experience = [
         type: "Internship",
         color: "#8b5cf6",
     },
+    {
+        year: "2022 — 2023",
+        role: "Web Developer",
+        company: "Aligntax Consultancy",
+        desc: "Developed and maintained web applications for the consultancy, building client-facing portals and internal tools. Worked on full-stack development, creating responsive and user-friendly interfaces to streamline business operations.",
+        tech: ["HTML", "CSS", "JavaScript", "React.js", "Node.js"],
+        type: "Full-time",
+        color: "#a78bfa",
+    },
 ];
 
 // Floating checkpoint crystal
@@ -226,8 +235,9 @@ function SpaceDebris({ count = 50 }) {
 
 function ExperienceScene() {
     const checkpoints = [
-        [-3, 1.5, 0],
-        [3, -1.5, 0],
+        [-4, 1.5, 0],
+        [0, -0.5, 0],
+        [4, 1.5, 0],
     ];
 
     return (
@@ -246,11 +256,16 @@ function ExperienceScene() {
                 />
             ))}
 
-            {/* Trail between checkpoints */}
+            {/* Trails between checkpoints */}
             <ParticleTrail
                 start={checkpoints[0]}
                 end={checkpoints[1]}
                 color="#6366f1"
+            />
+            <ParticleTrail
+                start={checkpoints[1]}
+                end={checkpoints[2]}
+                color="#8b5cf6"
             />
 
             <Nebula />
@@ -314,18 +329,26 @@ export default function ExperienceJourney() {
                     {/* Crystal labels overlay */}
                     <div className="absolute inset-0 pointer-events-none">
                         {/* Left crystal label */}
-                        <div className="absolute left-[15%] sm:left-[20%] top-[15%] sm:top-[20%]">
+                        <div className="absolute left-[5%] sm:left-[10%] top-[10%] sm:top-[15%]">
                             <div className="glass-card px-3 py-1.5 sm:px-4 sm:py-2">
                                 <span className="text-[10px] sm:text-xs font-mono text-[var(--primary-light)]">
                                     ◆ {experience[0].role}
                                 </span>
                             </div>
                         </div>
-                        {/* Right crystal label */}
-                        <div className="absolute right-[15%] sm:right-[20%] bottom-[15%] sm:bottom-[20%]">
+                        {/* Center crystal label */}
+                        <div className="absolute left-1/2 -translate-x-1/2 bottom-[10%] sm:bottom-[15%]">
                             <div className="glass-card px-3 py-1.5 sm:px-4 sm:py-2">
                                 <span className="text-[10px] sm:text-xs font-mono text-[var(--accent-light)]">
                                     ◆ {experience[1].role}
+                                </span>
+                            </div>
+                        </div>
+                        {/* Right crystal label */}
+                        <div className="absolute right-[5%] sm:right-[10%] top-[10%] sm:top-[15%]">
+                            <div className="glass-card px-3 py-1.5 sm:px-4 sm:py-2">
+                                <span className="text-[10px] sm:text-xs font-mono" style={{ color: '#a78bfa' }}>
+                                    ◆ {experience[2].role}
                                 </span>
                             </div>
                         </div>
@@ -333,7 +356,7 @@ export default function ExperienceJourney() {
                 </motion.div>
 
                 {/* Experience Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     {experience.map((exp, i) => (
                         <motion.div
                             key={i}
@@ -362,7 +385,7 @@ export default function ExperienceJourney() {
                                         color: exp.color,
                                     }}
                                 >
-                                    {i === 0 ? "⚡" : "🚀"}
+                                    {i === 0 ? "⚡" : i === 1 ? "🚀" : "💼"}
                                 </div>
                                 <div>
                                     <span className="text-xs font-mono text-[var(--text-muted)]">
