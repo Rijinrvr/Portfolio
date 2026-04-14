@@ -10,21 +10,26 @@ import {
 const socialLinks = [
   {
     icon: FaGithub,
+    
     href: "https://github.com/Rijinrvr",
     label: "GitHub",
     hoverColor: "hover:text-white hover:bg-[#333]",
   },
   {
     icon: FaLinkedinIn,
+    target: "_blank",
+
     href: "https://www.linkedin.com/in/r-v-r/",
     label: "LinkedIn",
     hoverColor: "hover:text-white hover:bg-[#0077b5]",
   },
   {
     icon: FaInstagram,
-    href: "https://www.instagram.com/_eleven_._?igsh=MTV6dmN1MDNsa2dwbg==",
+    target: "_blank",
+    href: "https://www.instagram.com/thefoodiedeveloper?igsh=MXFleDk3MzQ5bXdrdg==",
     label: "Instagram",
-    hoverColor: "hover:text-white hover:bg-gradient-to-r hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888]",
+    hoverColor:
+      "hover:text-white hover:bg-gradient-to-r hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888]",
   },
 ];
 
