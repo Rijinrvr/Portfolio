@@ -7,6 +7,17 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 
 const experience = [
   {
+    year: "2026 — Present",
+    role: "Senior Systems Engineer",
+    company: "RM plc",
+    desc: "Support system operations and infrastructure for the Assessment–Technical Operations team, ensuring reliable and highly available technical services. Perform troubleshooting and root-cause analysis across systems and infrastructure to minimize downtime. Contribute to DevOps practices including CI/CD pipeline support, deployment workflows, and infrastructure monitoring. Collaborate with cross-functional technical teams to deliver reliable, scalable solutions and improve operational processes.",
+    tech: ["DevOps", "CI/CD", "Infrastructure", "Cloud", "Monitoring"],
+    type: "Full-time",
+    color: "#22d3ee",
+    icon: "🛰️",
+    level: 4,
+  },
+  {
     year: "2023 — 2025",
     role: "Software Engineer",
     company: "Apps Team Technologies",
@@ -137,18 +148,20 @@ function Nebula() {
 }
 
 function ExperienceScene() {
-  const checkpoints = [[-4, 1.5, 0], [0, -0.5, 0], [4, 1.5, 0]];
+  const checkpoints = [[-5.5, 1.5, 0], [-1.8, -0.8, 0], [1.8, 1.0, 0], [5.5, -0.8, 0]];
   return (
     <>
       <ambientLight intensity={0.2} />
-      <pointLight position={[5, 5, 5]}   intensity={0.6} color="#6366f1" />
-      <pointLight position={[-5, -3, 3]} intensity={0.4} color="#8b5cf6" />
-      <pointLight position={[0, 3, -5]}  intensity={0.3} color="#a78bfa" />
+      <pointLight position={[5, 5, 5]}   intensity={0.6} color="#22d3ee" />
+      <pointLight position={[-5, -3, 3]} intensity={0.4} color="#6366f1" />
+      <pointLight position={[0, 3, -5]}  intensity={0.3} color="#8b5cf6" />
+      <pointLight position={[3, -4, 2]}  intensity={0.3} color="#a78bfa" />
       {experience.map((exp, i) => (
         <CheckpointCrystal key={i} position={checkpoints[i]} color={exp.color} index={i} />
       ))}
-      <ParticleTrail start={checkpoints[0]} end={checkpoints[1]} color="#6366f1" />
-      <ParticleTrail start={checkpoints[1]} end={checkpoints[2]} color="#8b5cf6" />
+      <ParticleTrail start={checkpoints[0]} end={checkpoints[1]} color="#22d3ee" />
+      <ParticleTrail start={checkpoints[1]} end={checkpoints[2]} color="#6366f1" />
+      <ParticleTrail start={checkpoints[2]} end={checkpoints[3]} color="#8b5cf6" />
       <Nebula />
     </>
   );
@@ -213,7 +226,7 @@ function ExpCard({ exp, index, isInView }) {
         background: exp.color, opacity: 0.5, boxShadow: `0 0 12px ${exp.color}`,
       }} />
 
-      <div className="p-6 sm:p-7 flex flex-col flex-1">
+      <div className="p-4 sm:p-5 lg:p-4 xl:p-6 flex flex-col flex-1">
         {/* Level badge + type */}
         <div className="flex items-center gap-2 mb-4">
           <motion.div
@@ -237,7 +250,7 @@ function ExpCard({ exp, index, isInView }) {
             </span>
           </div>
           {/* Year chip */}
-          <span className="ml-auto text-[10px] font-mono text-[var(--text-muted)] bg-[rgba(255,255,255,0.04)] px-2 py-1 rounded-md">
+          <span className="ml-auto text-[10px] font-mono text-[var(--text-muted)] bg-[rgba(255,255,255,0.04)] px-1.5 py-0.5 rounded-md text-center leading-tight max-w-[80px] lg:max-w-[72px] xl:max-w-none">
             {exp.year}
           </span>
         </div>
@@ -247,7 +260,7 @@ function ExpCard({ exp, index, isInView }) {
           initial={{ opacity: 0, x: -12 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.55 + index * 0.18 }}
-          className="text-lg sm:text-xl font-bold text-white mb-0.5"
+          className="text-base lg:text-sm xl:text-lg font-bold text-white mb-0.5 leading-snug"
         >
           {exp.role}
         </motion.h3>
@@ -288,7 +301,7 @@ function ExpCard({ exp, index, isInView }) {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.7 + index * 0.18 + ti * 0.05 }}
-                className="text-[10px] sm:text-xs font-mono px-2.5 py-1 rounded-md border"
+                className="text-[10px] font-mono px-2 py-0.5 rounded-md border"
                 style={{ color: exp.color, borderColor: `${exp.color}30`, background: `${exp.color}08` }}
               >
                 {t}
@@ -372,7 +385,12 @@ export default function ExperienceJourney() {
           {/* Crystal label overlay */}
           <div className="absolute inset-0 pointer-events-none">
             {experience.map((exp, i) => {
-              const positions = ["left-[6%] top-[12%]", "left-1/2 -translate-x-1/2 bottom-[10%]", "right-[6%] top-[12%]"];
+              const positions = [
+                "left-[2%] top-[10%]",
+                "left-[26%] bottom-[8%]",
+                "left-[56%] top-[10%]",
+                "right-[2%] bottom-[8%]",
+              ];
               return (
                 <motion.div
                   key={i}
@@ -400,7 +418,7 @@ export default function ExperienceJourney() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6"
         >
           {experience.map((exp, i) => (
             <ExpCard key={i} exp={exp} index={i} isInView={isInView} />
