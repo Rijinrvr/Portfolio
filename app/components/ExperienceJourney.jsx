@@ -418,7 +418,7 @@ export default function ExperienceJourney() {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6 items-start"
         >
           {experience.map((exp, i) => (
             <ExpCard key={i} exp={exp} index={i} isInView={isInView} />
